@@ -14,7 +14,7 @@
       $errormsg = "The account address is in the wrong format";
     }
     // Check human
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    // $url = 'https://www.google.com/recaptcha/api/siteverify';
     $data = array(
       'secret' => $recaptcha_secret,
       'response' => $_REQUEST["g-recaptcha-response"]
@@ -49,7 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.js"></script>
     <script>
 $(document).ready(function(){
@@ -158,7 +158,7 @@ MyAccount		ABCDEFGHIGKLMNOPQRSTUVWXYZ123456789
         <input type="text" class="form-control" name="to" id="to">
         <p class="help-block">It is the ABCDEFGHIGKLMNOPQRSTUVWXYZ123456789 from the above example</p>
       </div>
-      <div class="g-recaptcha" data-sitekey="<?= $recaptcha_key ?>"></div>
+      <!-- <div class="g-recaptcha" data-sitekey="<?= $recaptcha_key ?>"></div> -->
       <div class="control-group" style="margin-top:10px;">
         <button type="submit" class="btn btn-primary">Send me 10 fermions</button>
       </div>
