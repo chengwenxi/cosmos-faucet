@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script>
 $(document).ready(function(){
     $.ajax({
